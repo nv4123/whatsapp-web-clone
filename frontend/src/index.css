@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+.navbar {
+  background: #075e54;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.main-container {
+  display: flex;
+  height: 90vh;
+}
+.sidebar {
+  width: 30%;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-header input {
+  flex: 1;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.chat-list {
+  padding: 5px;
+}
+
+.chat-item {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.chat-item.active {
+  background-color: #dfefff;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.search-results {
+  background: #fff;
+  border: 1px solid #ccc;
+  position: absolute;
+  z-index: 1;
+  width: 25%;
+  margin-left: 10px;
+}
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #e5ddd5;
+}
+
+.chat-header {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #075e54;
+  color: white;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chat-bubble {
+  max-width: 70%;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.sent {
+  background: #dcf8c6;
+  align-self: flex-end;
+}
+
+.received {
+  background: white;
+  align-self: flex-start;
+}
+
+.chat-footer {
+  padding: 10px;
+  background: #f0f0f0;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 8px;
+}
+
+.tick {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 2px;
+}
+
+.status-text {
+  font-size: 12px;
+  color: #dcdcdc;
+}
+.chat-footer {
+  position: relative;
+}
+
+.emoji-picker {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  z-index: 1000;
+}
+.sidebar-header input {
+  width: 70%;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.sidebar-header button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+}
